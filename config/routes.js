@@ -12,6 +12,9 @@ module.exports = app => {
     app.get('/loginRegister', controllers.user.loginGet);
     app.post('/login', controllers.user.loginPost);
 
+    //about
+    app.get('/about', controllers.home.about);
+
     // add routes here
 
     app.all('*', (req, res) => {
